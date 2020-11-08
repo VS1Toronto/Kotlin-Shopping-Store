@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivity">
+
+
+
+    <!-- ScrollView must go here to make entire screen scrollable-->
+    <!-- -->
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:id="@+id/linear_layout_Shell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                tools:layout_editor_absoluteY="16dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:orientation="vertical"
+
+        >
+
+
+
+            <!-- Image and 2 Button Layout 1 -->
+            <!-- -->
+            <ImageView
+                    android:id="@+id/mensWomensFashion"
+                    android:layout_width="448dp"
+                    android:layout_height="448dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginRight="95dp"
+                    app:srcCompat="@drawable/image1"
+            />
+
+            <LinearLayout
+                    android:id="@+id/core_linear_layout_1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mensWomensFashion"
+            >
+
+
+                <Button
+                        android:id="@+id/menswear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mens"
+                />
+
+                <Button
+                        android:id="@+id/womenswear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Womens"
+                />
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- Image and 2 Button Layout 2 -->
+            <!-- -->
+            <ImageView
+                    android:id="@+id/familyFashion"
+                    android:layout_width="448dp"
+                    android:layout_height="448dp"
+                    android:layout_below="@+id/core_linear_layout_1"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginRight="95dp"
+                    app:srcCompat="@drawable/image2"
+                    android:layout_marginTop="0dp"/>
+
+            <LinearLayout
+                    android:id="@+id/core_linear_layout_2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/familyFashion"
+            >
+
+
+                <Button
+                        android:id="@+id/boyswear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Boys"
+                />
+
+                <Button
+                        android:id="@+id/girlswear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Girls"
+                />
+
+            </LinearLayout>
+
+
+
+
+
+            <!-- Image and 2 Button Layout 3 -->
+            <!-- -->
+            <ImageView
+                    android:id="@+id/homeAndGarden"
+                    android:layout_width="448dp"
+                    android:layout_height="448dp"
+                    android:layout_below="@+id/core_linear_layout_2"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginRight="95dp"
+                    app:srcCompat="@drawable/image3"
+                    android:layout_marginTop="0dp"/>
+
+            <LinearLayout
+                    android:id="@+id/linear_layout_3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/familyFashion"
+            >
+
+
+                <Button
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Home"
+                />
+
+                <Button
+                        android:id="@+id/garden"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Garden"
+                />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

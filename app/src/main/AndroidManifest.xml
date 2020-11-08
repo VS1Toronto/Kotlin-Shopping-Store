@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.core.data_07">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <!--  -->
+        <!-- Main Activity -->
+        <!--  -->
+        <activity
+                android:name=".MainActivity"
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity> <!--  -->
+        <!--  -->
+        <!-- Preference Activities -->
+        <!--  -->
+        <activity
+                android:name=".PrefsActivity"
+                android:label="@string/title_activity_prefs"
+                android:parentActivityName=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.core.data_07.MainActivity" />
+        </activity><!--     -->
+        <!--  -->
+        <!-- Main Activities -->
+        <!--  -->
+        <activity
+                android:name=".MensWearActivity"
+                android:label="@string/menswear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".WomensWearActivity"
+                android:label="@string/womenswear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".BoysWearActivity"
+                android:label="@string/boyswear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".GirlsWearActivity"
+                android:label="@string/girlswear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".HomeActivity"
+                android:label="@string/home"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".GardenActivity"
+                android:label="@string/garden"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity> <!--  -->
+        <!--  -->
+        <!-- Detail Activities -->
+        <!--  -->
+        <activity
+                android:name=".DetailActivity"
+                android:label="@string/details_womens_wear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DetailActivityMensWear"
+                android:label="@string/details_mens_wear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DetailActivityBoysWear"
+                android:label="@string/details_boys_wear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DetailActivityGirlsWear"
+                android:label="@string/details_girls_wear"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DetailActivityHome"
+                android:label="@string/details_home"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".DetailActivityGarden"
+                android:label="@string/details_garden"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

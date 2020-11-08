@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines -->
+    <!-- -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- This had to be added to get under the toolbar with list items -->
+    <!-- -->
+    <dimen name="top_toolbar_vertical_margin">67dp</dimen>
+</resources>
